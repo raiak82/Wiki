@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-03-12T12:40:43Z" name="WikiTest by packages" finished-at="2018-03-12T12:40:50Z" duration-ms="6473">
+    <groups>
+    </groups>
+    <test started-at="2018-03-12T12:40:43Z" name="wikipedia.Test" finished-at="2018-03-12T12:40:50Z" duration-ms="6473">
+      <class name="wikipedia.Test.WikipediaPageTest">
+        <test-method is-config="true" signature="LaunchApp()[pri:0, instance:wikipedia.Test.WikipediaPageTest@762ef0ea]" started-at="2018-03-12T12:40:40Z" name="LaunchApp" finished-at="2018-03-12T12:40:43Z" duration-ms="3773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method signature="testWikiSearch()[pri:0, instance:wikipedia.Test.WikipediaPageTest@762ef0ea]" started-at="2018-03-12T12:40:43Z" name="testWikiSearch" finished-at="2018-03-12T12:40:47Z" duration-ms="3943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWikiSearch -->
+        <test-method signature="testwikiSearchResult()[pri:0, instance:wikipedia.Test.WikipediaPageTest@762ef0ea]" started-at="2018-03-12T12:40:47Z" name="testwikiSearchResult" finished-at="2018-03-12T12:40:50Z" duration-ms="2496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testwikiSearchResult -->
+        <test-method is-config="true" signature="close()[pri:0, instance:wikipedia.Test.WikipediaPageTest@762ef0ea]" started-at="2018-03-12T12:40:50Z" name="close" finished-at="2018-03-12T12:40:50Z" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- wikipedia.Test.WikipediaPageTest -->
+    </test> <!-- wikipedia.Test -->
+  </suite> <!-- WikiTest by packages -->
+</testng-results>

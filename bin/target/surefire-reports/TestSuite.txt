@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 0.654 sec <<< FAILURE!
+LaunchApp(wikipedia.Framework.BaseTest)  Time elapsed: 0.46 sec  <<< FAILURE!
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at wikipedia.Framework.Driver.getInstance(Driver.java:14)
+	at wikipedia.Framework.BaseTest.initialize(BaseTest.java:22)
+	at wikipedia.Framework.BaseTest.LaunchApp(BaseTest.java:15)
+
+close(wikipedia.Framework.BaseTest)  Time elapsed: 0.556 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at wikipedia.Framework.BaseTest.close(BaseTest.java:29)
+
