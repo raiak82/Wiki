@@ -1,9 +1,0 @@
-wikipedia/Page/WikiResult.class
-wikipedia/Framework/Logger.class
-wikipedia/Framework/PageDetails.class
-wikipedia/Test/WikipediaPageTest.class
-wikipedia/Framework/WebUi.class
-wikipedia/Page/WikipediaPage.class
-wikipedia/Framework/Driver.class
-wikipedia/Framework/BaseTest.class
-wikipedia/Page/WikiSearch.class
