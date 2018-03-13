@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 public class WikipediaPageTest extends BaseTest{
 
 	public static String searchLanguage = "English";
-	public static String searchText = "Hewlett Packard";
+	public static String searchText = "Hewlett-Packard";
 	public static String NegativeText = "see it comes back and search works";
 
 	@Test
@@ -29,18 +29,13 @@ public class WikipediaPageTest extends BaseTest{
 
 		wikiPage.searchBox.sendKeys(searchText);
 		wikiPage.searchButton.click();
+		WikiResult wikiResult = PageFactory.initElements(WikiResult.getInstance(), WikiResult.class);
+		System.out.println(wikiResult.heading.getText());
+		assert(wikiResult.heading.getText().contains(searchText));
 
 		WikiSearch wikiSearch = PageFactory.initElements(WikiSearch.getInstance(), WikiSearch.class);
 		wikiSearch.mainPage.click();
-
-		WikiResult wikiResult = PageFactory.initElements(WikiResult.getInstance(), WikiResult.class);
-		int SectionHeadercount= wikiResult.sectionHeaders.size();
-		
-		
-		assert (SectionHeadercount == 9);
-		assert(wikiResult.heading.getText().contains(searchText));
-		
-
+				
 		//verify the section headers
 		List<String> articleHeaders = wikiResult.sectionHeaders.stream()
 									.map(element -> element.getText())
